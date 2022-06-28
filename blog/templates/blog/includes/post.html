@@ -2,12 +2,12 @@
 
 <li>
     <article class = "post">
-        <a href = "">
-            <img src = "{% static 'blog/images/pog.png' %}" alt = "Mountain Hiking" />
+        <a href = "{% url 'post-detail' post.slug %}">
+            <img src = "{% static 'blog/images/'|add:post.image %}" alt = "{{post.title}}" />
             <div class = "post__content">
-                <h3> Anime Girls </h3>
+                <h3> {{ post.title }} </h3>
                 <p> 
-                    There's nothing like the moment when you watch an anime girl and the just coom at the thought of her touching you!
+                    {{post.excerpt}}
                 </p>
             </div>
         </a>
