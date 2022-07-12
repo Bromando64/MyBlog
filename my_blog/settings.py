@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-d0e4*+ipn*&g(y!5w4_fp2svhjc#71qdq=a&mj72oe!(z68*iu
 DEBUG = getenv("IS_DEVELOPMENT", True)
 
 ALLOWED_HOSTS = [
-    getenv("APP_HOST")
+    "epickgaymer.pythonanywhere.com"
 ]
 
 
